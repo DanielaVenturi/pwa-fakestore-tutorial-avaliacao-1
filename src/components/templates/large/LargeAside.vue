@@ -24,6 +24,19 @@ onMounted(async () => {
                 <i class="icon mdi" :class="category.icon"></i> {{ category.name }}
             </router-link>
         </div>
+        <div class="divider" />
+        <div class="menu">
+            <router-link to="/login">
+                <i class="icon mdi mdi-account" /> Login
+            </router-link>
+        </div>
+        <router-link to="/categorias">
+                <i class="icon mdi mdi-home-outline" /> categoria
+            </router-link>
+            <router-link to="/produtos/adicionar">
+                <i class="icon mdi mdi-cart-outline" /> Produto add
+            </router-link>
+          
     </div>
     <logo-title />
 </template>
